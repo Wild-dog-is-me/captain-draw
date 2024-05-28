@@ -1,6 +1,6 @@
 24-05-05.21:53:51.148 [main            ] INFO  Application            - Starting Application using Java 1.8.0_341 on OdindeMacBook-Air.local with PID 12366 (/Users/odin/Desktop/big-marketing/big-marketing-app/target/classes started by odin in /Users/odin/Desktop/big-marketing)
 24-05-05.21:53:51.150 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-24-05-05.21:53:52.195 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.example]' package. Please check your configuration.
+24-05-05.21:53:52.195 [main            ] WARN  ClassPathMapperScanner - No MyBatis mapper was found in '[org.dog]' package. Please check your configuration.
 24-05-05.21:53:52.797 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
 24-05-05.21:53:52.822 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
 24-05-05.21:53:52.824 [main            ] INFO  StandardService        - Starting service [Tomcat]
