@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 /**
  * @Author: Odin
  * @Date: 2024/5/31 19:03
- * @Description:
+ * @Description:策略奖品实体
  */
 @Data
 @Builder

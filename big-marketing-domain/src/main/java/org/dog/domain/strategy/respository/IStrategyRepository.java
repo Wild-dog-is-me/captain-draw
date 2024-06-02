@@ -1,8 +1,9 @@
 package org.dog.domain.strategy.respository;
 
 import org.dog.domain.strategy.model.entity.StrategyAwardEntity;
+import org.dog.domain.strategy.model.entity.StrategyEntity;
+import org.dog.domain.strategy.model.entity.StrategyRuleEntity;
 
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -14,9 +15,15 @@ import java.util.Map;
 public interface IStrategyRepository {
     List<StrategyAwardEntity> queryStrategyAwardList(Long strategyId);
 
-    void storeStrategyAwardSearchRateTable(Long strategyId, int rateRange, Map<Integer, Integer> shuffleStrategyAwardSearchRateTable);
+    void storeStrategyAwardSearchRateTable(String key, int rateRange, Map<Integer, Integer> shuffleStrategyAwardSearchRateTable);
 
     int getRateRange(Long strategyId);
 
-    Integer getStrategyAwardAssemble(Long strategyId, int rateKey);
+    int getRateRange(String key);
+
+    Integer getStrategyAwardAssemble(String key, int rateKey);
+
+    StrategyEntity queryStrategyEntityByStrategyId(Long strategyId);
+
+    StrategyRuleEntity queryStrategyRule(Long strategyId, String ruleModel);
 }
